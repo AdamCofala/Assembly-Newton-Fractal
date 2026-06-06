@@ -2,9 +2,9 @@
 
 Interactive visualization of the Newton fractal for the polynomial
 
-$
+$$
 f(z) = z^3 - 1
-$
+$$
 
 implemented in C++ and x86-64 Assembly with OpenGL rendering and ImGui controls.
 
@@ -12,9 +12,9 @@ implemented in C++ and x86-64 Assembly with OpenGL rendering and ImGui controls.
 
 This project generates a Newton fractal by applying Newton's method to every pixel of the complex plane. Each pixel represents a starting point (z_0), and the algorithm iteratively searches for one of the roots of
 
-$
+$$
 z^3 - 1 = 0.
-$
+$$
 
 The resulting convergence pattern produces the characteristic Newton fractal structure.
 
@@ -35,25 +35,25 @@ Features:
 
 For a function (f(z)), Newton's iteration is defined as
 
-$
+$$
 z_{n+1}=z_n-\frac{f(z_n)}{f'(z_n)}.
-$
+$$
 
 For this project
 
-$
+$$
 f(z)=z^3-1
-$
+$$
 
 and
 
-$
+$$
 f'(z)=3z^2.
-$
+$$
 
 Substituting into Newton's formula gives
 
-$
+$$
 z_{n+1}
 =======
 
@@ -61,7 +61,7 @@ z_{n+1}
 
 \frac{z_n^3-1}
 {3z_n^2}.
-$
+$$
 
 This iteration is repeated until convergence or until the maximum iteration count is reached.
 
@@ -71,51 +71,51 @@ This iteration is repeated until convergence or until the maximum iteration coun
 
 A complex number is represented as
 
-$
+$$
 z=z_r+i z_i.
-$
+$$
 
 #### Squaring
 
-$
+$$
 z^2=(z_r+i z_i)^2
-$
+$$
 
-$
+$$
 z^2=(z_r^2-z_i^2)+i(2z_rz_i).
-$
+$$
 
 Therefore
 
-$
+$$
 \operatorname{Re}(z^2)=z_r^2-z_i^2
-$
+$$
 
-$
+$$
 \operatorname{Im}(z^2)=2z_rz_i.
-$
+$$
 
 ---
 
 #### Cubing
 
-$
+$$
 z^3=z^2\cdot z.
-$
+$$
 
 Using complex multiplication
 
-$(a+ib)(c+id)=(ac-bd)+i(ad+bc),$
+$$(a+ib)(c+id)=(ac-bd)+i(ad+bc),$$
 
 
 we obtain
 
-$
+$$
 z^3=
 (z_r^3-3z_rz_i^2)
 +
 i(3z_r^2z_i-z_i^3).
-$
+$$
 
 ---
 
@@ -123,19 +123,19 @@ $
 
 For
 
-$
+$$
 f(z)=z^3-1
-$
+$$
 
 the real and imaginary components are
 
-$
+$$
 f_r=\operatorname{Re}(z^3)-1
-$
+$$
 
-$
+$$
 f_i=\operatorname{Im}(z^3).
-$
+$$
 
 ---
 
@@ -143,19 +143,19 @@ $
 
 Since
 
-$
+$$
 f'(z)=3z^2,
-$
+$$
 
 we compute
 
-$
+$$
 f'_r=3(z_r^2-z_i^2)
-$
+$$
 
-$
+$$
 f'_i=6z_rz_i.
-$
+$$
 
 ---
 
@@ -163,25 +163,25 @@ $
 
 Newton's method requires
 
-$
+$$
 \frac{f(z)}{f'(z)}.
-$
+$$
 
 For
 
-$
+$$
 \frac{a+ib}{c+id}
-$
+$$
 
 the division formula is
 
-$
+$$
 \frac{a+ib}{c+id}
 =================
 
 \frac{(ac+bd)+i(bc-ad)}
 {c^2+d^2}.
-$
+$$
 
 This is used directly in the implementation.
 
@@ -191,23 +191,23 @@ This is used directly in the implementation.
 
 The roots of
 
-$
+$$
 z^3-1=0
-$
+$$
 
 are
 
-$
+$$
 z_1=1,
-$
+$$
 
-$
+$$
 z_2=-\frac12+\frac{\sqrt3}{2}i,
-$
+$$
 
-$
+$$
 z_3=-\frac12-\frac{\sqrt3}{2}i.
-$
+$$
 
 After the iteration process finishes, the closest root is selected.
 
@@ -219,15 +219,15 @@ The convergence speed determines pixel brightness.
 
 Let
 
-$
+$$
 t=\frac{\text{iterations}}{\text{maxIterations}}.
-$
+$$
 
 Brightness is computed as
 
-$
+$$
 B=B_{root}(1-t)
-$
+$$
 
 where (B_{root}) is a root-dependent brightness coefficient.
 
