@@ -54,13 +54,7 @@ $$
 Substituting into Newton's formula gives
 
 $$
-z_{n+1}
-=======
-
-## z_n
-
-\frac{z_n^3-1}
-{3z_n^2}.
+z_{n+1}=z_n - \frac{z_n^3-1}{3z_n^2}.
 $$
 
 This iteration is repeated until convergence or until the maximum iteration count is reached.
@@ -88,11 +82,11 @@ $$
 Therefore
 
 $$
-\operatorname{Re}(z^2)=z_r^2-z_i^2
+\Re(z^2)=z_r^2-z_i^2
 $$
 
 $$
-\operatorname{Im}(z^2)=2z_rz_i.
+\Im(z^2)=2z_rz_i.
 $$
 
 ---
@@ -130,11 +124,11 @@ $$
 the real and imaginary components are
 
 $$
-f_r=\operatorname{Re}(z^3)-1
+f_r=\Re(z^3)-1
 $$
 
 $$
-f_i=\operatorname{Im}(z^3).
+f_i=\Im(z^3).
 $$
 
 ---
@@ -176,11 +170,7 @@ $$
 the division formula is
 
 $$
-\frac{a+ib}{c+id}
-=================
-
-\frac{(ac+bd)+i(bc-ad)}
-{c^2+d^2}.
+\frac{a+ib}{c+id}=\frac{(ac+bd)+i(bc-ad)}{c^2+d^2}.
 $$
 
 This is used directly in the implementation.
