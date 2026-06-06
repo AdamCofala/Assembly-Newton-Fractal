@@ -1,0 +1,18 @@
+# ninja log v5
+4	13	1780417328055300918	CMakeFiles/NewtonFractal.dir/asm/fill.asm.o	9a316410f06ff767
+23	1253	1780741007719252521	CMakeFiles/NewtonFractal.dir/src/main.cpp.o	6f10a27045d611b0
+39	10376	1780417971083858571	CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o	7771fda090a37cb
+38	7078	1780417967783922845	CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o	80d0b5e9652ec2b0
+297	338	1780418118747967863	libglad.a	9d0d1eeda7d3f8be
+2	21	0	/home/adam/NewtonFractal/build/CMakeFiles/cmake.verify_globs	dd4e08adb9ba1386
+40	1234	1780417961953584172	CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o	4027a5772723a95b
+37	11349	1780417972063735920	CMakeFiles/imgui.dir/imgui/imgui.cpp.o	579f73d60e8dc563
+38	9756	1780417970465492453	CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o	a21dcfc1eaa79504
+39	297	1780418118708037231	CMakeFiles/glad.dir/include/glad/glad.c.o	81177fd9a84c99cf
+47	77	1780740874403533965	CMakeFiles/NewtonFractal.dir/asm/fractal.asm.o	4c96d0d75888e63b
+58	551	1780417976691246287	CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o	10bdcfbf994ce52f
+33	150	1780417983231069196	libimgui.a	192b8c4b860823b1
+1254	2123	1780741008567520843	NewtonFractal	c44062c5edfc02ac
+5	24	0	/home/adam/NewtonFractal/build/CMakeFiles/cmake.verify_globs	dd4e08adb9ba1386
+27	1349	1780741035726869690	CMakeFiles/NewtonFractal.dir/src/main.cpp.o	6f10a27045d611b0
+1349	2295	1780741036661069117	NewtonFractal	c44062c5edfc02ac

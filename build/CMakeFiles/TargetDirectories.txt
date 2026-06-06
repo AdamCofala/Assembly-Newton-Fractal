@@ -1,0 +1,5 @@
+/home/adam/NewtonFractal/build/CMakeFiles/glad.dir
+/home/adam/NewtonFractal/build/CMakeFiles/imgui.dir
+/home/adam/NewtonFractal/build/CMakeFiles/NewtonFractal.dir
+/home/adam/NewtonFractal/build/CMakeFiles/edit_cache.dir
+/home/adam/NewtonFractal/build/CMakeFiles/rebuild_cache.dir
