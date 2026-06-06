@@ -14,9 +14,9 @@ r2i:        dd 0.8660254
 r3i:        dd -0.8660254   ; r3r is same as r2r (-0.5)
 
 ; Base brightness for roots
-base_b0:    dd 1.0
-base_b1:    dd 0.7
-base_b2:    dd 0.4
+base_b0:    dd 1.5
+base_b1:    dd 1.0
+base_b2:    dd 0.8
 
 section .text
 
@@ -245,9 +245,12 @@ newton_asm:
     mov rax, r10
     shl rax, 2                ; idx * 4 , Conversion to bytes
 
-    movss [rdx + rax + 0], xmm1
+
+    movss [rdx + rax + 8], xmm1 ; Blue tint
+
+    mulss xmm1, [rel half]  ; 0.5 * gray
     movss [rdx + rax + 4], xmm1
-    movss [rdx + rax + 8], xmm1
+    movss [rdx + rax + 0], xmm1
 
     inc r9
     jmp .x_loop

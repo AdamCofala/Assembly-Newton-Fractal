@@ -132,7 +132,7 @@ void newton_cpp(
             float gray = baseBrightness[root] * (1.0f - t);
 
             rgb_out[idx + 0] = gray;
-            rgb_out[idx + 1] = gray;
+            rgb_out[idx + 1] = 0.6 * gray;
             rgb_out[idx + 2] = gray;
         }
     }
