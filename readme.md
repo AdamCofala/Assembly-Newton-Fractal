@@ -1,7 +1,7 @@
 # Newton Fractal Renderer (C++ / x86-64 Assembly)
 
 
-|<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8538f99d-7449-4151-82ee-e9d90e98a3c8" /> | Interactive visualization of the Newton fractal for the polynomial $f(z) = z^3 - 1$ implemented in C++ and x86-64 Assembly with OpenGL rendering and ImGui controls.|
+|<img width="801" height="806" alt="image" src="https://github.com/user-attachments/assets/9296724d-7ad7-489e-8537-9e815bfcd84b" />| Interactive visualization of the Newton fractal for the polynomial $f(z) = z^3 - 1$ implemented in C++ and x86-64 Assembly with OpenGL rendering and ImGui controls.|
 |---|---|
 
 
